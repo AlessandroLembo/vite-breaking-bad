@@ -35,6 +35,7 @@ export default {
     img {
         height: 120px;
         border-radius: 10px;
+        box-shadow: 0 0 6px 3px black;
     }
 }
 </style>
