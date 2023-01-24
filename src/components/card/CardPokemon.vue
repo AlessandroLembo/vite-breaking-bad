@@ -1,12 +1,14 @@
 <script>
 import axios from 'axios';
 import CardImage from './CardImage.vue';
+import { store } from '../../data/store';
+
 export default {
     name: 'CardPokemon',
     components: { CardImage },
     data() {
         return {
-            images: []
+            store
         }
     },
 
@@ -14,7 +16,7 @@ export default {
         fetchImages(url) {
             axios.get(url)
                 .then((res) => {
-                    this.images = res.data.docs;
+                    store.images = res.data.docs;
                 });
         }
     },
@@ -26,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <card-image v-for="image in images" :key="image.id" :image="image.imageUrl" :number="image.number"
+    <card-image v-for="image in store.images" :key="image.id" :image="image.imageUrl" :number="image.number"
         :name="image.name" :type="image.type1"></card-image>
 </template>
 
