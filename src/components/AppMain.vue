@@ -1,6 +1,8 @@
 <script>
+import CardPokemon from './CardPokemon.vue';
 export default {
     name: 'AppMain',
+    components: { CardPokemon },
 
 }
 </script>
@@ -9,7 +11,8 @@ export default {
     <main>
         <div class="main-container">
             <div class="row">
-                <div class="col">
+                <card-pokemon></card-pokemon>
+                <!-- <div class="col">
                     <div class="card">
 
                     </div>
@@ -58,7 +61,7 @@ export default {
                     <div class="card">
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
@@ -80,19 +83,5 @@ export default {
         display: flex;
         flex-wrap: wrap;
     }
-}
-
-.col {
-    flex-basis: 20%;
-    height: 300px;
-    padding: 1rem;
-    border: 1px dashed yellow;
-
-    .card {
-        height: 100%;
-        border: 1px solid black;
-    }
-
-
 }
 </style>
