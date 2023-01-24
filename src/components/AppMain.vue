@@ -1,5 +1,5 @@
 <script>
-import CardPokemon from './CardPokemon.vue';
+import CardPokemon from './card/CardPokemon.vue';
 export default {
     name: 'AppMain',
     components: { CardPokemon },
@@ -19,20 +19,19 @@ export default {
 
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 @use '../assets/scss/partials/variables';
 
 .main-container {
     border-radius: 10px;
     background-color: aliceblue;
-    border: 1px solid black;
     padding: 2rem;
-    margin-top: 3rem;
 
     .row {
         background-color: darkgray;
         display: flex;
         flex-wrap: wrap;
+        border-radius: 10px;
     }
 }
 </style>

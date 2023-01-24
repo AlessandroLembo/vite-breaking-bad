@@ -8,10 +8,10 @@ export default {
 <template>
     <header>
         <div class="header-container">
-            <div class="left-header"></div>
-            <div class="right-header"></div>
-
-
+            <h1 class="title">POKEMON</h1>
+            <figure>
+                <img src="../assets/img/poke.jpg" alt="logo">
+            </figure>
         </div>
     </header>
 </template>
@@ -21,14 +21,20 @@ export default {
 
 .header-container {
     height: 150px;
-    border: 1px dashed black;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    .left-header,
-    .right-header {
-        flex-basis: 50%;
-        border: 1px solid yellow;
+    .title {
+        font-weight: bold;
+        font-size: 60px;
+        color: yellow;
+        text-shadow: 2px 2px dodgerblue;
+    }
+
+    img {
+        height: 120px;
+        border-radius: 10px;
     }
 }
 </style>
