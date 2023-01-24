@@ -22,6 +22,9 @@ export default {
     <div v-for="image in images" :key="image.id" class="col">
         <div class="card">
             <img :src="image.imageUrl">
+            <div> {{ image.number }} </div>
+            <h2> {{ image.name }} </h2>
+            <h4><i> {{ image.type1 }} </i></h4>
         </div>
     </div>
 </template>
@@ -33,21 +36,26 @@ export default {
     flex-basis: 20%;
     height: 350px;
     padding: 1rem;
-    border: 1px dashed yellow;
-
+    border-radius: 10px;
 }
 
 .card {
-    border: 1px solid black;
-    border-radius: 10px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
 
     img {
         height: 150px;
         width: 150px;
         border-radius: 50%;
     }
+}
+
+.card * {
+    padding-bottom: 0.7rem;
 }
 </style>
