@@ -6,7 +6,8 @@ export default {
         number: Number,
         name: String,
         type: String
-    }
+    },
+
 }
 </script>
 
@@ -22,7 +23,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../../assets/scss/partials/variables';
+@use '../../assets/scss/partials/variables' as *;
 
 .col {
     flex-basis: 20%;
@@ -44,6 +45,22 @@ export default {
         width: 150px;
         border-radius: 50%;
     }
+
+    // &.bkg-green {
+    //     background-color: $green ;
+    // }
+
+    // &.bkg-blue {
+    //     background-color: $lightblue ;
+    // }
+
+    // &.bkg-dodger {
+    //     background-color: $dodger;
+    // }
+
+    // &.bkg-gold {
+    //     background-color: $gold;
+    // }
 }
 
 .card * {

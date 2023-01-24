@@ -1,0 +1,14 @@
+// @use 'variables' as *;
+
+// /* Mixin for card's backgroun-color */
+// @mixin background-color($type: 'water' ) {
+//     @if $type == 'dark' {
+//         background-color: $green;
+//     } @else if $type == 'fighting' {
+//         background-color: $dodger;
+//     } @else if $type == 'fire' {
+//         background-color: $gold;
+//     } @else {
+//         background-color: $lightblue;
+//     }
+// }

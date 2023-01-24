@@ -20,7 +20,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../assets/scss/partials/variables';
+@use '../assets/scss/partials/variables' as *;
 
 .main-container {
     border-radius: 10px;
