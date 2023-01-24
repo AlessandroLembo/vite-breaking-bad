@@ -1,0 +1,20 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERICS */
+.container{
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #b30000;
+    padding: 2rem;
+}
+
+.wrapper{
+    min-height: 100vh; 
+    border: 1px dashed black;
+}
