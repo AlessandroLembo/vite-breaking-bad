@@ -12,56 +12,7 @@ export default {
         <div class="main-container">
             <div class="row">
                 <card-pokemon></card-pokemon>
-                <!-- <div class="col">
-                    <div class="card">
 
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div> -->
             </div>
         </div>
     </main>

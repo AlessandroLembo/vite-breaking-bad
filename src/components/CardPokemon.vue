@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios';
 export default {
 
 }
@@ -62,13 +63,14 @@ export default {
 
 .col {
     flex-basis: 20%;
-    height: 300px;
+    height: 350px;
     padding: 1rem;
     border: 1px dashed yellow;
 
     .card {
         height: 100%;
         border: 1px solid black;
+        border-radius: 10px;
     }
 
 
