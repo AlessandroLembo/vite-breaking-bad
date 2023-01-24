@@ -5,9 +5,11 @@ export default {
 </script>
 
 <template>
+  <div class="container">
 
+  </div>
 </template>
 
-<style>
+<style lang="scss">
 
 </style>
