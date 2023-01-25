@@ -12,7 +12,8 @@ export default {
   data() {
     return {
       store,
-      type: ''
+      type: '',
+      apiUri: 'https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons',
     }
   },
 
@@ -26,7 +27,14 @@ export default {
     },
 
     selectPokemonType(item) {
-      console.log(item)
+      if (item === 'All') {
+        console.log('all')
+
+      } else {
+        // console.log('others')
+        const url = `${this.apiUri}?q[type1]=${item}`
+        this.fetchImages(url);
+      }
     }
   },
 
