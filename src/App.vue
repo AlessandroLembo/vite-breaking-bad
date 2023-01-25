@@ -2,13 +2,13 @@
 import axios from 'axios';
 import { store } from './data/store';
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
+import AppCols from './components/AppCols.vue';
 import FilterPokemon from './components/FilterPokemon.vue';
 
 
 export default {
   name: 'App',
-  components: { AppHeader, AppMain, FilterPokemon },
+  components: { AppHeader, AppCols, FilterPokemon },
   data() {
     return {
       store
@@ -36,10 +36,10 @@ export default {
     <div class="wrapper">
       <app-header></app-header>
       <div class="main-container">
-        <filter-pokemon></filter-pokemon>
+        <filter-pokemon @type-change=""></filter-pokemon>
         <div class="row">
-          <app-main v-for="image in store.images" :key="image.id" :image="image.imageUrl" :number="image.number"
-            :name="image.name" :type="image.type1"></app-main>
+          <app-cols v-for="image in store.images" :key="image.id" :image="image.imageUrl" :number="image.number"
+            :name="image.name" :type="image.type1"></app-cols>
         </div>
       </div>
     </div>
