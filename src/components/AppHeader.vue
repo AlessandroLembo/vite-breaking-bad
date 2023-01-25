@@ -7,6 +7,7 @@ export default {
 
 <template>
     <header>
+        <!-- here Header content -->
         <div class="header-container">
             <h1 class="title">POKEMON</h1>
             <figure>
@@ -17,13 +18,12 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/partials/variables' as *;
+@use '../assets/scss/partials/items-alignment' as *;
 
 .header-container {
     height: 150px;
-    display: flex;
+    @include center-flex;
     justify-content: space-around;
-    align-items: center;
 
     .title {
         font-weight: bold;

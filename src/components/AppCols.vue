@@ -13,6 +13,7 @@ export default {
 </script>
 
 <template>
+    <!-- here cards content -->
     <div class="col">
         <div class="card">
             <img :src="image" :alt="name">
@@ -25,7 +26,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
+// use variables file
 @use '../assets/scss/partials/variables' as *;
+@use '../assets/scss/partials/items-alignment' as *;
+
 
 .col {
     flex-basis: 20%;
@@ -34,10 +38,9 @@ export default {
 }
 
 .card {
-    height: 100%;
-    display: flex;
+    height: $h100;
+    @include center-flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: whitesmoke;
     border-radius: 10px;
