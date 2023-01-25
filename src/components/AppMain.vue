@@ -1,8 +1,9 @@
 <script>
 import CardPokemon from './card/CardPokemon.vue';
+import FilterPokemon from './FilterPokemon.vue';
 export default {
     name: 'AppMain',
-    components: { CardPokemon },
+    components: { CardPokemon, FilterPokemon },
 
 }
 </script>
@@ -10,9 +11,9 @@ export default {
 <template>
     <main>
         <div class="main-container">
+            <filter-pokemon></filter-pokemon>
             <div class="row">
                 <card-pokemon></card-pokemon>
-
             </div>
         </div>
     </main>

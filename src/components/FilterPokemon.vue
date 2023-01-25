@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: 'FilteredPokemon',
 
 }
 </script>
@@ -8,7 +9,6 @@ export default {
     <div class="filter-pokemon">
         <select name="pokemon" id="pokemon-type">
             <option value="fire">Fire</option>
-            <option value="water">Water</option>
         </select>
     </div>
 </template>
@@ -16,7 +16,6 @@ export default {
 <style scoped lang="scss">
 .filter-pokemon {
     display: flex;
-    justify-content: center;
     margin: 1rem;
 }
 

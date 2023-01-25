@@ -1,7 +1,7 @@
 <script>
-import FilterPokemon from './FilterPokemon.vue';
+// import FilterPokemon from './FilterPokemon.vue';
 export default {
-    components: { FilterPokemon },
+    // components: { FilterPokemon },
     name: 'AppHeader',
 
 }
@@ -10,7 +10,7 @@ export default {
 <template>
     <header>
         <div class="header-container">
-            <filter-pokemon></filter-pokemon>
+            <!-- <filter-pokemon></filter-pokemon> -->
             <h1 class="title">POKEMON</h1>
             <figure>
                 <img src="../assets/img/poke.jpg" alt="logo">
