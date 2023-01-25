@@ -25,8 +25,8 @@ export default {
         });
     },
 
-    selectPokemonType(type) {
-      // this.type = type;
+    selectPokemonType(item) {
+      console.log(item)
     }
   },
 
@@ -41,7 +41,7 @@ export default {
     <div class="wrapper">
       <app-header></app-header>
       <div class="main-container">
-        <filter-pokemon @type-change="selectPokemonType"></filter-pokemon>
+        <filter-pokemon @value-change="selectPokemonType"></filter-pokemon>
         <div class="row">
           <app-cols v-for="image in store.images" :key="image.id" :image="image.imageUrl" :number="image.number"
             :name="image.name" :type="image.type1"></app-cols>
