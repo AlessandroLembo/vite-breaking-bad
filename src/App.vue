@@ -28,7 +28,8 @@ export default {
 
     selectPokemonType(item) {
       if (item === 'All') {
-        console.log('all')
+        const allType = ('https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons?per=20&page=8')
+        this.fetchImages(allType);
 
       } else {
         // console.log('others')
@@ -39,7 +40,7 @@ export default {
   },
 
   created() {
-    this.fetchImages('https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons?per=10&page=8')
+    this.fetchImages('https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons?per=20&page=8')
   }
 }
 </script>

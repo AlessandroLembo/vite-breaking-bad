@@ -32,7 +32,8 @@ export default {
 <template>
     <div class="filter-pokemon">
         <select name="pokemon" id="pokemon-type" @change="$emit('value-change', chooseValue)" v-model="chooseValue">
-            <option value="All">All</option>
+            <option value="" selected disabled hidden>Select type</option>
+            <option selected="selected" value="All">All</option>
             <option v-for="type in types" :key="type" :value=type>
                 {{ type }} </option>
         </select>
