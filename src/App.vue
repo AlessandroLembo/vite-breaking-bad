@@ -11,7 +11,8 @@ export default {
   components: { AppHeader, AppCols, FilterPokemon },
   data() {
     return {
-      store
+      store,
+      type: ''
     }
   },
 
@@ -22,6 +23,10 @@ export default {
         .then((res) => {
           store.images = res.data.docs;
         });
+    },
+
+    selectPokemonType(type) {
+      // this.type = type;
     }
   },
 
@@ -36,7 +41,7 @@ export default {
     <div class="wrapper">
       <app-header></app-header>
       <div class="main-container">
-        <filter-pokemon @type-change=""></filter-pokemon>
+        <filter-pokemon @type-change="selectPokemonType"></filter-pokemon>
         <div class="row">
           <app-cols v-for="image in store.images" :key="image.id" :image="image.imageUrl" :number="image.number"
             :name="image.name" :type="image.type1"></app-cols>

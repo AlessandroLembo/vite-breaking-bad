@@ -6,7 +6,8 @@ export default {
     name: 'FilteredPokemon',
     data() {
         return {
-            types: []
+            types: [],
+            chooseType: '',
         }
     },
 
@@ -23,16 +24,15 @@ export default {
         this.fetchTypes()
     },
 
-    emits: ['type-change']
+    // emits: ['type-change']
 
 }
 </script>
 
 <template>
     <div class="filter-pokemon">
-        <select name="pokemon" id="pokemon-type" v-model="types" @change="$emit('type-change', types)">
-            <option value="">-</option>
-            <option value="type">Fire</option>
+        <select name="pokemon" id="pokemon-type" v-model="chooseType">
+            <option v-for="type in types" :value=type> {{ type }} </option>
         </select>
     </div>
 </template>
